@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/similar-products.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <script defer src="./assets/js/search-bar.js"></script>
+  <script defer src="../js/footer-validation.js"></script>
+  <title>Produtos Similares</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header__left">
+        <h1>
+          <a href="../../index.html "><img src="../images/logo.svg" alt="logo alura geek" class="header__logo" /></a>
+        </h1>
+        <div class="header__search-box">
+          <input type="search" class="header__search-box__text-input" placeholder="O que deseja encontrar?" />
+          <a href="#"><img src="../images/lupa.svg" alt="" class="header__search-box__lupa"></a>
+        </div>
+      </div>
+      <a href="#" class="header__search-icon--mobile"><img src="../images/gray-magnifier-icon.svg"
+          alt="lupa de busca" /></a>
+    </header>
+    <main class="product">
+      <img src="../images/caneca-stormtrooper-media.jpg" alt="boneco storm trooper" class="product__img" />
+      <div class="product__details">
+        <h2 class="product__title">Caneca Stormtrooper</h2>
+        <p class="product__price">R$ 60,00</p>
+        <p class="product__description">
+          Voluptas voluptatum quibusdam similique, class debitis alias
+          maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis,
+          minima malesuada habitasse distinctio sequi aliqua malesuada.
+          Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
+          Commodo, quia ridiculus doloribus vero dictum? Penatibus donec
+          placeat faucibus, dolorum do. Animi porta anim magnam
+        </p>
+      </div>
+    </main>
+    <section class="similar__box">
+      <h3 class="similar__box__title">Produtos similares</h3>
+      <div class="similar__box__cards">
+        <div class="similar__card">
+          <img src="../images/xbox-one-joystick.jpg" alt="controle para console xbox one" class="similar__card__img" />
+          <h4 class="similar__card__title">Controle Xbox One</h4>
+          <p class="similar__card__price">R$60,00</p>
+          <a href="#" class="similar__card__details">Ver produto</a>
+        </div>
+        <div class="similar__card">
+          <img src="../images/darth-vader-head.jpg" alt="cabeça Darth Vader" class="similar__card__img" />
+          <h4 class="similar__card__title">Cabeça Darth Vader</h4>
+          <p class="similar__card__price">R$60,00</p>
+          <a href="#" class="similar__card__details">Ver produto</a>
+        </div>
+        <div class="similar__card">
+          <img src="../images/yoda-action-figure.jpg" alt="boneco mestre Yoda" class="similar__card__img" />
+          <h4 class="similar__card__title">Mestre Yoda</h4>
+          <p class="similar__card__price">R$60,00</p>
+          <a href="#" class="similar__card__details">Ver produto</a>
+        </div>
+        <div class="similar__card">
+          <img src="../images/stormtrooper-action-figure.jpg" alt="boneco storm trooper" class="similar__card__img" />
+          <h4 class="similar__card__title">Storm Trooper</h4>
+          <p class="similar__card__price">R$60,00</p>
+          <a href="#" class="similar__card__details">Ver produto</a>
+        </div>
+        <div class="similar__card baby-yoda">
+          <img src="../images/baby-yoda-action-figure.png" alt="boneco baby yoda" class="similar__card__img" />
+          <h4 class="similar__card__title">Baby Yoda</h4>
+          <p class="similar__card__price">R$60,00</p>
+          <a href="#" class="similar__card__details">Ver produto</a>
+        </div>
+        <div class="similar__card sith-costume">
+          <img src="../images/sith.jpg" alt="fantasia sith" class="similar__card__img" />
+          <h4 class="similar__card__title">Fantasia Sith</h4>
+          <p class="similar__card__price">R$60,00</p>
+          <a href="#" class="similar__card__details">Ver produto</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="footer__sup">
+        <a href="../../index.html" class="footer__sup__logo"><img src="../images/logo.svg" alt=""></a>
+        <nav class="footer__sup__links-box">
+          <a href="#" class="footer__sup__link">Quem somos nós</a>
+          <a href="#" class="footer__sup__link">Política de privacidade</a>
+          <a href="#" class="footer__sup__link">Programa de fidelidade</a>
+          <a href="#" class="footer__sup__link">Nossas Lojas</a>
+          <a href="#" class="footer__sup__link">Quero ser um franqueado</a>
+          <a href="#" class="footer__sup__link">Anuncie aqui</a>
+        </nav>
+        <form action="#" class="footer__sup__form">
+          <p class="footer__sup__form-title">Fale conosco</p>
+          <div class="form__sup__name">
+            <label for="name-input" class="footer__sup__name-label">Nome</label>
+            <input type="text" id="name-input" class="footer__sup__name-input" pattern="[A-Za-z\s]{2,40}" required>
+          </div>
+          <span class="footer__sup__name-input__error-msg" id="name-error">Este campo deve ser preenchido e conter no
+            máximo 40 caracteres</span>
+          <textarea placeholder="Escreva sua mensagem" name="msg" id="msg" cols="30" rows="10"
+            class="footer__sup__textarea" minlength="2" maxlength="120" required></textarea>
+          <span class="footer__sup__textarea__error-msg" id="ta-error-msg">Este campo deve ser preenchido e conter no
+            máximo 120 caracteres</span>
+          <button class="footer__sup__btn" id="footer-sup-btn" disabled>Enviar mensagem</button>
+        </form>
+  </div>
+  </section>
+  <section class="footer__sub">
+    <p>Desenvolvido por <strong class="dev__box__name">Rodrigo Duarte</strong></p>
+    <p>2023</p>
+  </section>
+  </footer>
+  </div>
+</body>
+
+</html>

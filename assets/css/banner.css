@@ -1,0 +1,65 @@
+.banner__box {
+    background-image: url(../images/toad-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-base);
+    gap: 2rem;
+    height: 352px;
+    justify-content: flex-end;
+    padding: 9.5rem 9.5rem 2rem 9.5rem;
+    width: 100%;
+}
+
+.banner__box__title {
+    font-size: 3.25rem;
+}
+
+.banner__box__subtitle {
+    font-size: 1.4rem;
+}
+
+.banner__box__btn {
+    background-color: var(--azul);
+    border: none;
+    color: white;
+    font-family: inherit;
+    padding: 1rem;
+    width: 8.125rem;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .banner__box {
+        padding: 9.5rem 2rem 2rem 2rem;
+    }
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+    .banner__box {
+        gap: 0.5rem;
+        height: 192px;
+        padding: 4.875rem 1rem 1rem 1rem;
+    }
+
+    .banner__box__title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .banner__box__subtitle {
+        font-size: 14px;
+    }
+
+    .banner__box__btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px 16px;
+    }
+}

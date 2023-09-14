@@ -1,0 +1,121 @@
+.star-wars__box {
+  background-color: var(--cinza-claro);
+  padding: 4rem 9.5rem 0rem 9.5rem;
+  font-family: var(--font-base);
+}
+
+.star-wars__box__heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.star-wars__box__title {
+  font-size: 2rem;
+  color: var(--cinza-medio);
+}
+
+.see-all__box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.see-all__link {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.see-all__text {
+  color: var(--azul);
+  font-weight: 700;
+}
+
+.star-wars__box__cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.star-wars__card__img {
+  width: 100%;
+}
+
+.star-wars__card__title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.star-wars__card__price {
+  color: var(--cinza-medio);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.star-wars__card__details {
+  color: var(--azul);
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+  .star-wars__box {
+    padding: 2rem;
+  }
+
+  .baby-yoda {
+    display: none;
+  }
+
+  .sith-costume {
+    display: none;
+  }
+}
+
+/* SMARTPHONE */
+
+@media (max-width: 480px) {
+  .star-wars__box {
+    padding: 1rem 1rem;
+  }
+
+  .star-wars__box__heading{
+    margin-top: 0;
+  }
+
+  .star-wars__box__title {
+    font-size: 22px;
+  }
+
+  .star-wars__box__cards {
+    flex-wrap: wrap;
+  }
+
+  .star-wars__card__img {
+    width: 156px;
+  }
+
+  .see-all__link {
+    display: flex;
+    gap: 4px;
+  }
+
+  .see-all__text {
+    font-size: 14px;
+  }
+
+  .see-all__img {
+    width: 16px;
+  }
+
+  .star-wars__card__details {
+    font-size: 14px;
+  }
+}

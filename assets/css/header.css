@@ -1,0 +1,110 @@
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9.5rem;
+    width: 100%;
+}
+
+.header__left {
+    display: flex; 
+    align-items: center;
+}
+
+.header__search-box {
+    align-items: center;
+    background-color: var(--cinza-claro);
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    margin-left: 2rem;
+    padding: 8px 16px;
+    width: 29vw;
+}
+
+.header__search-box__text-input {
+    background-color: inherit;
+    border: none;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.header__search-box__text-input:focus {
+    outline: none;
+}
+
+.header__btn {
+    background-color: white;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-family: var(--font-base);
+    font-weight: 600;
+    padding: 16px 70px;
+}
+
+.header__search-icon--mobile {
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__search-box {
+        padding: 0.5rem 1rem;
+        width: 272px;
+    }
+
+    .header__btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px 64px;
+    }
+
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__search-box__lupa {
+        order: -1;
+    }
+
+    .header__search-box {
+        display: none;
+    }
+
+    .header__search-box {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    .header__btn {
+        font-size: 14px;
+        padding: 12px 47px;
+    }
+
+    .header__search-icon--mobile {
+        display: flex;
+    }
+}

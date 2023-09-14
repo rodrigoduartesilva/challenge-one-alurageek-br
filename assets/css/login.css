@@ -1,0 +1,86 @@
+.login {
+  background-color: var(--cinza-claro);
+  font-family: var(--font-base);
+  padding: 91px 0;
+}
+
+.login__form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.login__form__title {
+  color: var(--cinza-medio);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.login__form input {
+  border: none;
+  border-bottom: 1px solid #a2a2a2;
+  padding: 25px 12px;
+  width: 423px;
+}
+
+.login__form input::placeholder {
+  color: #a2a2a2;
+}
+
+.login__form__error-msg {
+  color: red;
+  display: none;
+  font-family: inherit;
+  font-size: 12;
+  margin-top: -20px;
+}
+
+.login__form__btn {
+  background-color: var(--azul);
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20.5px;
+  width: 423px;
+}
+
+.login__form__btn:disabled {
+  opacity: 60%;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+  .login {
+    padding: 32px;
+  }
+
+  .login__form {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .login__form__title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .login__form input {
+    padding: 8px 12px 13px 12px;
+    width: 275px;
+  }
+
+  .login__form__btn {
+    font-size: 14px;
+    padding: 12px 34px;
+    width: 109px;
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+}

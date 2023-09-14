@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/add-product.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <script defer src="./assets/js/search-bar.js"></script>
+  <script defer src="../js/add-product.js"></script>
+  <script defer src="../js/footer-validation.js"></script>
+  <title>Adicionar Novo Produto</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header__left">
+        <h1>
+          <a href="../../index.html ">
+            <img src="../images/logo.svg" alt="logo alura geek" class="header__logo" />
+          </a>
+        </h1>
+        <div class="header__search-box">
+          <input type="search" class="header__search-box__text-input" placeholder="O que deseja encontrar?" />
+          <a href="#">
+            <img src="../images/lupa.svg" alt="lupa de busca" class="header__search-box__lupa" />
+          </a>
+        </div>
+      </div>
+      <a href="edit-products.html"><button class="header__btn">Menu administrador</button></a>
+      <a href="#" class="header__search-icon--mobile"><img src="../images/gray-magnifier-icon.svg"
+          alt="lupa de busca" /></a>
+    </header>
+    <section class="add-product">
+      <form action="" class="add-product__form">
+        <h2 class="add-product__form__title">Adicionar Novo Produto</h2>
+        <img src="../images/img-preview-icon.png" alt="Product preview" id="product-img" class="add-product__form__img">
+        <div class="add-product__form__img-inputs">
+          <div class="add-product__form__input-box">
+            <label for="url-input" class="add-product__form__url-label">URL da imagem</label>
+            <input type="url" id="url-input" class="add-product__form__url-input" />
+          </div>
+          <p>Ou</p>
+          <label for="file-input" class="add-product__form__file-label">Procure no seu aparelho</label>
+          <input type="file" accept="image/jpeg, image/png" id="file-input" class="add-product__form__file-input">
+        </div>
+        <span class="add-product__form__img-inputs--error-msg error-msg" data-error-msg="img">Por favor preencha uma URL
+          válida ou suba uma imagem nos formatos PNG ou JPG.</span>
+        <div class="add-product__form__input-box">
+          <label for="category-input" class="add-product__form__category-label">Categoria</label>
+          <input type="text" id="category-input" class="add-product__form__category-input" maxlength="20" required />
+        </div>
+        <span class="add-product__form__category--error-msg error-msg" data-error-msg="category">Por favor preencha uma
+          categoria para este produto (máx 20 caracteres).</span>
+        <div class="add-product__form__input-box">
+          <label for="product-name-input" class="add-product__form__name-label">Nome do produto</label>
+          <input type="text" id="product-name-input" class="add-product__form__name-input" maxlength="20" required />
+        </div>
+        <span class="add-product__form__name-input--error-msg error-msg" data-error-msg="product-name">Por favor
+          preencha um nome para este produto (máx 20 caracteres).</span>
+        <div class="add-product__form__input-box">
+          <label for="price-input" class="add-product__form__price-label">Preço do produto</label>
+          <input type="number" id="price-input" class="add-product__form__price-input" required />
+        </div>
+        <span class="add-product__form__price-input--error-msg error-msg" data-error-msg="price">Por favor preencha um
+          preço para este produto.</span>
+        <textarea id="product-description" class="add-product__form__description" cols="30" rows="10" maxlength="150"
+          placeholder="Descrição do produto" required></textarea>
+        <span class="add-product__form__description--error-msg error-msg" data-error-msg="description">Por favor
+          preencha uma descrição para este produto (máx 150 caracteres).</span>
+        <button class="add-product__form__btn" disabled data-form-btn type="button">Adicionar produto</button>
+      </form>
+    </section>
+    <footer>
+      <section class="footer__sup">
+        <a href="../../index.html" class="footer__sup__logo"><img src="../images/logo.svg" alt=""></a>
+        <nav class="footer__sup__links-box">
+          <a href="#" class="footer__sup__link">Quem somos nós</a>
+          <a href="#" class="footer__sup__link">Política de privacidade</a>
+          <a href="#" class="footer__sup__link">Programa de fidelidade</a>
+          <a href="#" class="footer__sup__link">Nossas Lojas</a>
+          <a href="#" class="footer__sup__link">Quero ser um franqueado</a>
+          <a href="#" class="footer__sup__link">Anuncie aqui</a>
+        </nav>
+        <form action="#" class="footer__sup__form">
+          <p class="footer__sup__form-title">Fale conosco</p>
+          <div class="form__sup__name">
+            <label for="name-input" class="footer__sup__name-label">Nome</label>
+            <input type="text" id="name-input" class="footer__sup__name-input" pattern="[A-Za-z\s]{2,40}" required>
+          </div>
+          <span class="footer__sup__name-input__error-msg" id="name-error">Este campo deve ser preenchido e conter no
+            máximo 40 caracteres</span>
+          <textarea placeholder="Escreva sua mensagem" name="msg" id="msg" cols="30" rows="10"
+            class="footer__sup__textarea" minlength="2" maxlength="120" required></textarea>
+          <span class="footer__sup__textarea__error-msg" id="ta-error-msg">Este campo deve ser preenchido e conter no
+            máximo 120 caracteres</span>
+          <button class="footer__sup__btn" id="footer-sup-btn" disabled type="button">Enviar mensagem</button>
+        </form>
+  </div>
+  </section>
+  <section class="footer__sub">
+    <p>Desenvolvido por <strong class="dev__box__name">Rodrigo Duarte</strong></p>
+    <p>2023</p>
+  </section>
+  </footer>
+  </div>
+</body>
+
+</html>

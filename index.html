@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/star-wars-section.css">
+    <link rel="stylesheet" href="assets/css/consoles-section.css">
+    <link rel="stylesheet" href="assets/css/miscellaneous-section.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header__left">
+                <h1><a href="#"><img src="assets/images/logo.svg" alt="logo alura geek" class="header__logo"></a></h1>
+                <div class="header__search-box">
+                    <input type="search" class="header__search-box__text-input" data-search-input
+                        placeholder="O que deseja encontrar?">
+                    <a href="#"><img src="assets/images/lupa.svg" alt="" class="header__search-box__lupa"></a>
+                </div>
+            </div>
+            <a href="assets/pages/login.html" class="header__btn__link"><button class="header__btn">Login</button></a>
+            <a href="#" class="header__search-icon--mobile"><img src="assets/images/gray-magnifier-icon.svg"
+                    alt="lupa de busca"></a>
+        </header>
+
+        <section class="banner__box">
+            <h2 class="banner__box__title">Dezembro Promocional</h2>
+            <h3 class="banner__box__subtitle">Produtos selecionados com 33% de desconto</h3>
+            <a href="#console__box"><button class="banner__box__btn">Ver Consoles</button></a>
+        </section>
+
+        <section class="star-wars__box" data-product-section>
+            <div class="star-wars__box__heading">
+                <h3 class="star-wars__box__title">Star Wars</h3>
+                <div class="see-all__box">
+                    <a href="assets/pages/all-products.html" class="see-all__link">
+                        <p class="see-all__text">Ver tudo</p>
+                        <img src="assets/images/arrow.svg" alt="" class="see-all__img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="star-wars__box__cards">
+                <div class="star-wars__card">
+                    <img src="assets/images/caneca-stormtrooper.jpg"
+                        alt="caneca em formato de cabeça de um storm trooper" class="star-wars__card__img">
+                    <h4 class="star-wars__card__title">Caneca Storm Trooper</h4>
+                    <p class="star-wars__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="star-wars__card__details">Ver produto</a>
+                </div>
+
+                <div class="star-wars__card">
+                    <img src="assets/images/darth-vader-head.jpg" alt="cabeça Darth Vader" class="star-wars__card__img">
+                    <h4 class="star-wars__card__title">Cabeça Darth Vader</h4>
+                    <p class="star-wars__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="star-wars__card__details">Ver produto</a>
+                </div>
+
+                <div class="star-wars__card mestre-yoda">
+                    <img src="assets/images/yoda-action-figure.jpg" alt="boneco mestre Yoda"
+                        class="star-wars__card__img">
+                    <h4 class="star-wars__card__title">Mestre Yoda</h4>
+                    <p class="star-wars__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="star-wars__card__details">Ver produto</a>
+                </div>
+
+                <div class="star-wars__card storm-trooper">
+                    <img src="assets/images/stormtrooper-action-figure.jpg" alt="boneco storm trooper"
+                        class="star-wars__card__img">
+                    <h4 class="star-wars__card__title">Storm Trooper</h4>
+                    <p class="star-wars__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="star-wars__card__details">Ver produto</a>
+                </div>
+
+                <div class="star-wars__card baby-yoda">
+                    <img src="assets/images/baby-yoda-action-figure.png" alt="boneco baby yoda"
+                        class="star-wars__card__img">
+                    <h4 class="star-wars__card__title">Baby Yoda</h4>
+                    <p class="star-wars__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="star-wars__card__details">Ver produto</a>
+                </div>
+
+                <div class="star-wars__card sith-costume">
+                    <img src="assets/images/sith.jpg" alt="fantasia sith" class="star-wars__card__img">
+                    <h4 class="star-wars__card__title">Fantasia Sith</h4>
+                    <p class="star-wars__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="star-wars__card__details">Ver produto</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="console__box" id="console__box" data-product-section>
+            <div class="console__box__heading">
+                <h3 class="console__box__title">Consoles</h3>
+                <div class="see-all__box">
+                    <a href="assets/pages/all-products.html" class="see-all__link">
+                        <p class="see-all__text">Ver tudo</p>
+                        <img src="assets/images/arrow.svg" alt="" class="see-all__img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="console__box__cards">
+                <div class="console__card">
+                    <img src="assets/images/xbox-one-joystick.jpg" alt="controle branco xbox one"
+                        class="console__card__img">
+                    <h4 class="console__card__title">Controle Xbox One</h4>
+                    <p class="console__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="console__card__details">Ver produto</a>
+                </div>
+
+                <div class="console__card">
+                    <img src="assets/images/playstation-5.jpg" alt="console ps5" class="console__card__img">
+                    <h4 class="console__card__title">PlayStation 5</h4>
+                    <p class="console__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="console__card__details">Ver produto</a>
+                </div>
+
+                <div class="console__card">
+                    <img src="assets/images/nes-console.jpg" alt="console Nintendinho" class="console__card__img">
+                    <h4 class="console__card__title">Nintendinho</h4>
+                    <p class="console__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="console__card__details">Ver produto</a>
+                </div>
+
+                <div class="console__card">
+                    <img src="assets/images/nintendo-switch-joycon.jpg" alt="controles para nintendo switch"
+                        class="console__card__img">
+                    <h4 class="console__card__title">Controles Joycon</h4>
+                    <p class="console__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="console__card__details">Ver produto</a>
+                </div>
+
+                <div class="console__card xbox">
+                    <img src="assets/images/x-box.jpg" alt="console xbox" class="console__card__img">
+                    <h4 class="console__card__title">Xbox</h4>
+                    <p class="console__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="console__card__details">Ver produto</a>
+                </div>
+
+                <div class="console__card game-boy">
+                    <img src="assets/images/game-boy.jpg" alt="game boy color" class="console__card__img">
+                    <h4 class="console__card__title">Game Boy Color</h4>
+                    <p class="console__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="console__card__details">Ver produto</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="miscellaneous__box" data-product-section>
+            <div class="miscellaneous__box__heading">
+                <h3 class="miscellaneous__box__title">Diversos</h3>
+                <div class="see-all__box">
+                    <a href="assets/pages/all-products.html" class="see-all__link">
+                        <p class="see-all__text">Ver tudo</p>
+                        <img src="assets/images/arrow.svg" alt="" class="see-all__img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="miscellaneous__box__cards">
+                <div class="miscellaneous__card">
+                    <img src="assets/images/atari-t-shirt.jpg" alt="camiseta com logo atari"
+                        class="miscellaneous__card__img">
+                    <h4 class="miscellaneous__card__title">Camiseta Atari</h4>
+                    <p class="miscellaneous__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="miscellaneous__card__details">Ver produto</a>
+                </div>
+
+                <div class="miscellaneous__card">
+                    <img src="assets/images/nes-t-shirt.jpg" alt="camiseta controle nintendinho"
+                        class="miscellaneous__card__img">
+                    <h4 class="miscellaneous__card__title">Camiseta Nintendinho</h4>
+                    <p class="miscellaneous__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="miscellaneous__card__details">Ver produto</a>
+                </div>
+
+                <div class="miscellaneous__card">
+                    <img src="assets/images/sonic-action-figure.jpg" alt="boneco sonic"
+                        class="miscellaneous__card__img">
+                    <h4 class="miscellaneous__card__title">Action Figure Sonic</h4>
+                    <p class="miscellaneous__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="miscellaneous__card__details">Ver produto</a>
+                </div>
+
+                <div class="miscellaneous__card">
+                    <img src="assets/images/retro-alarm-clock.jpg" alt="radio relógio retrô cor de rosa"
+                        class="miscellaneous__card__img">
+                    <h4 class="miscellaneous__card__title">Rádio Relógio Retrô</h4>
+                    <p class="miscellaneous__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="miscellaneous__card__details">Ver produto</a>
+                </div>
+
+                <div class="miscellaneous__card vr-goggles">
+                    <img src="assets/images/vr-goggles.jpg" alt="óculos de realidade virtual"
+                        class="miscellaneous__card__img">
+                    <h4 class="miscellaneous__card__title">Óculos VR</h4>
+                    <p class="miscellaneous__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="miscellaneous__card__details">Ver produto</a>
+                </div>
+
+                <div class="miscellaneous__card pikachu-costume">
+                    <img src="assets/images/pikachu-costume.jpg" alt="fantasia pikachu"
+                        class="miscellaneous__card__img">
+                    <h4 class="miscellaneous__card__title">Fantasia Pikachu</h4>
+                    <p class="miscellaneous__card__price">R$60,00</p>
+                    <a href="assets/pages/similar-products.html" class="miscellaneous__card__details">Ver produto</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="footer__sup">
+                <a href="#" class="footer__sup__logo"><img src="assets/images/logo.svg" alt=""></a>
+                <nav class="footer__sup__links-box">
+                    <a href="#" class="footer__sup__link">Quem somos nós</a>
+                    <a href="#" class="footer__sup__link">Política de privacidade</a>
+                    <a href="#" class="footer__sup__link">Programa de fidelidade</a>
+                    <a href="#" class="footer__sup__link">Nossas Lojas</a>
+                    <a href="#" class="footer__sup__link">Quero ser um franqueado</a>
+                    <a href="#" class="footer__sup__link">Anuncie aqui</a>
+                </nav>
+
+                <form action="#" class="footer__sup__form">
+                    <p class="footer__sup__form-title">Fale conosco</p>
+                    <div class="form__sup__name">
+                        <label for="name-input" class="footer__sup__name-label">Nome</label>
+                        <input type="text" id="name-input" class="footer__sup__name-input" pattern="[A-Za-z\s]{2,40}"
+                            required>
+                    </div>
+
+                    <span class="footer__sup__name-input__error-msg" id="name-error">Este campo deve ser preenchido e
+                        conter no máximo 40 caracteres</span>
+                    <textarea placeholder="Escreva sua mensagem" name="msg" id="msg" cols="30" rows="10"
+                        class="footer__sup__textarea" minlength="2" maxlength="120" required></textarea>
+                    <span class="footer__sup__textarea__error-msg" id="ta-error-msg">Este campo deve ser preenchido e
+                        conter no máximo 120 caracteres</span>
+                    <button class="footer__sup__btn" id="footer-sup-btn" disabled type="button">Enviar mensagem</button>
+                </form>
+    </div>
+    </section>
+
+    <section class="footer__sub">
+        <p>Desenvolvido por <strong class="dev__box__name">Rodrigo Duarte</strong></p>
+        <p>2023</p>
+    </section>
+    </footer>
+    </div>
+
+    <script defer src="assets/js/search-bar.js"></script>
+    <script defer src="assets/js/footer-validation.js"></script>
+</body>
+
+</html>
