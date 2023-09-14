@@ -1,5 +1,3 @@
-# Challenge alura-geek
-
 <h1>AluraGeek Challenge</h1>
 
 A empresa AluraGeek está precisando trazer mais clientes e aumentar suas vendas, para isso desejam implementar um e-commerce e levar a empresa ao próximo patamar, se tornar mais digital.
@@ -11,4 +9,5 @@ A empresa AluraGeek está precisando trazer mais clientes e aumentar suas vendas
 - Uma página do produto que contenha a imagem, o nome, a descrição e o preço.
 - Um rodapé com formulário para contato e outras informações relevantes.
 - Menu administrador para eles conseguirem adicionar, editar, buscar ou eliminar produtos da loja.
-<h2>É muito importante que o site seja responsivo para dar aos clientes a facilidade de comprar através de dispositivos mobiles</h2>
+
+<h6>Desenvolvido por: Rodrigo Duarte</h6>
